@@ -1,0 +1,11 @@
+{
+  "name": "jaslloyd-skills",
+  "owner": { "name": "Jason Lloyd" },
+  "plugins": [
+    {
+      "name": "core",
+      "source": "./plugins/core",
+      "description": "Skills for everyday engineering work: opening, reviewing and addressing PRs, and getting up to speed on a codebase"
+    }
+  ]
+}

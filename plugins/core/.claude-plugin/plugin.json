@@ -1,0 +1,5 @@
+{
+  "name": "core",
+  "description": "Skills for everyday engineering work: opening, reviewing and addressing PRs, and getting up to speed on a codebase",
+  "version": "0.2.0"
+}
