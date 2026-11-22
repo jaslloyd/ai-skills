@@ -5,7 +5,7 @@ description: Work through the review comments on the current branch's PR/MR, fro
 
 # Address PR review comments
 
-Arguments: $ARGUMENTS (optional: a PR/MR number; defaults to the PR for the current branch)
+Arguments: whatever the user passed with the request (optional: a PR/MR number; defaults to the PR for the current branch)
 
 ## 1. Find the PR and its open threads
 

@@ -5,7 +5,7 @@ description: Review a pull request/merge request for real bugs, accessibility is
 
 # Review a PR
 
-Arguments: $ARGUMENTS (optional: a PR/MR number. With no number, use the PR for the current branch.)
+Arguments: whatever the user passed with the request (optional: a PR/MR number. With no number, use the PR for the current branch.)
 
 ## 1. Find the PR and load context
 
@@ -19,7 +19,7 @@ Gather:
 - The diff: `gh pr diff N` / `glab mr diff N`.
 - Existing review comments, so you don't repeat what others have already said.
 - **Full file context** for changed files, not just diff hunks. Don't switch the user's working branch. Fetch the head (`git fetch origin pull/N/head` on GitHub, `git fetch origin merge-requests/N/head` on GitLab), then read files with `git show FETCH_HEAD:path`, or use a temporary `git worktree` if you need to run things.
-- Repo conventions: CLAUDE.md, CONTRIBUTING, lint config, and nearby code that does similar things.
+- Repo conventions: AGENTS.md, CLAUDE.md, CONTRIBUTING, lint config, and nearby code that does similar things.
 
 ## 2. Look for problems
 

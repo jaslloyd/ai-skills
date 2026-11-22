@@ -5,4 +5,4 @@ description: What it does AND when to use it. Include the phrases you'd actually
 
 # Skill title
 
-Steps or instructions Claude should follow.
+Steps or instructions the agent should follow. Keep them tool-neutral (no `$ARGUMENTS` or agent-specific tool names) so the skill works in any agent.
