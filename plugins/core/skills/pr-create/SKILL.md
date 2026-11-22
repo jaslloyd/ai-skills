@@ -5,10 +5,11 @@ description: Create a pull request (GitHub) or merge request (GitLab) for the cu
 
 # Create a PR
 
-Arguments: $ARGUMENTS (optional: `ready`, or extra context about the change)
+Arguments: whatever the user passed with the request (optional: `ready`, or extra context about the change)
 
-Repo and user rules win over these defaults. Read `~/.claude/CLAUDE.md`, the repo's
-`CLAUDE.md`/`AGENTS.md`, `.claude/rules/` and `CONTRIBUTING.md` first, and follow any
+Repo and user rules win over these defaults. Read the user's and the repo's agent
+instruction files (for example `AGENTS.md`, `CLAUDE.md`, `~/.claude/CLAUDE.md`, `.claude/rules/`)
+and `CONTRIBUTING.md` first, and follow any
 branch, commit or PR rules they state.
 
 ## 1. Gather context
@@ -61,7 +62,7 @@ If there are uncommitted changes:
   ask which to include.
 - Subject: match the repo's style (ticket prefix, conventional commits and so on).
 - Body: a short **why**: the problem, what prompted it, and the outcome. Take it from
-  the conversation and `$ARGUMENTS`, not the diff (the diff shows what, not why). If
+  the conversation and the arguments, not the diff (the diff shows what, not why). If
   the why isn't clear, ask.
 
 ## 5. Write the title and description
