@@ -50,6 +50,7 @@ This copies the skills into your agent's skills folder. Update later with `npx s
 |---|---|
 | [`/pr-create`](./plugins/core/skills/pr-create/SKILL.md) | Opens a PR/MR on a branch named to the repo's convention, with the PR template filled in |
 | [`/pr-address`](./plugins/core/skills/pr-address/SKILL.md) | Checks review comments (human and AI), fixes the real ones, pushes, then optionally replies and resolves |
+| [`/pr-screenshot`](./plugins/core/skills/pr-screenshot/SKILL.md) | Screenshots the change (or takes your image), hosts it on a never-merged `pr-assets` branch and embeds it in the PR body |
 | [`/pr-feedback`](./plugins/core/skills/pr-feedback/SKILL.md) | Reviews a PR (optionally by number) for bugs, a11y and bad practices, verifies findings, drafts comments |
 | [`/repo-onboarding`](./plugins/core/skills/repo-onboarding/SKILL.md) | Orientation on an unfamiliar codebase: stack, how to run it, layout, gotchas |
 
