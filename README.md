@@ -55,11 +55,25 @@ This copies the skills into your agent's skills folder. Update later with `npx s
 
 ## Add a skill
 
-1. Copy [`templates/SKILL.template.md`](./templates/SKILL.template.md) to `plugins/core/skills/<skill-name>/SKILL.md`.
-2. Write a good `description`, since it decides when the skill triggers.
-3. Open a PR.
+```bash
+scripts/new-skill.sh <skill-name>
+```
 
-Or ask Claude: "use skill-creator to make a new skill in this repo".
+This copies [`templates/skill/`](./templates/skill) to `plugins/core/skills/<skill-name>/` and fills in the name. Each skill folder looks like this:
+
+```
+plugins/core/skills/<skill-name>/
+├── SKILL.md            # required: frontmatter (name, description) and the steps
+├── REFERENCE.md        # optional: detail the agent reads only when SKILL.md links to it
+├── scripts/            # optional: helper scripts the steps run
+└── agents/openai.yaml  # optional: display name and short description in Codex
+```
+
+Then:
+
+1. Write a good `description` in `SKILL.md`, since it decides when the skill triggers.
+2. Delete `REFERENCE.md` and `scripts/` if the skill doesn't need them.
+3. Add the skill to the table above and open a PR.
 
 Keep skills generic: no employer code, secrets, internal URLs, company names or personal details. Keep them agent-neutral too: no `$ARGUMENTS` or tool names that only one agent has.
 

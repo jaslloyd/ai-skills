@@ -1,0 +1,4 @@
+# How Codex shows this skill in its UI. Other agents ignore this file.
+interface:
+  display_name: "{{title}}"
+  short_description: "One line, under about 50 characters"
